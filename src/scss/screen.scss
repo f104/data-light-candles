@@ -1,0 +1,23 @@
+.dl-screen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 276px;
+    margin-bottom: 89px;
+    @media (min-width: $screen-sm) {
+        width: 688px;
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-bottom: 138px;
+    }
+    @media (min-width: $screen-md) {
+        width: 860px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 127px;
+    }
+    @media (min-width: $screen-xl) {
+        width: 1077px;
+        margin-bottom: 156px;
+    }
+}

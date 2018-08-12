@@ -1,0 +1,129 @@
+.dl-form {
+    margin-bottom: 55px;
+    margin-left: -10px;
+    margin-right: -10px;
+    @media (min-width: $screen-sm) {
+        margin-bottom: 71px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    @media (min-width: $screen-md) {
+        margin-bottom: 67px;
+    }
+    @media (min-width: $screen-lg) {
+        margin-bottom: 48px;
+    }
+    @media (min-width: $screen-xl) {
+        margin-bottom: 104px;
+    }
+    ::placeholder {
+        color: #444b69;
+        opacity: .3;
+    }
+    ::placeholder, &_button {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.9px;
+        text-transform: uppercase;
+        @media (min-width: $screen-sm) {
+            font-size: 9px;
+            letter-spacing: 0.8px;
+        }
+        @media (min-width: $screen-md) {
+            font-size: 10px;
+            letter-spacing: 0.9px;
+        }
+        @media (min-width: $screen-xl) {
+            font-size: 12px;
+            letter-spacing: 0.7px;
+        }
+    }
+    &_inputs {
+        display: flex;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 8px 14px 0 rgba(6, 5, 83, 0.06);
+        @media (min-width: $screen-sm) {
+            box-shadow: 0 10px 17px 0 rgba(6, 5, 83, 0.06);
+            margin-bottom: 30px;
+            width: 485px;
+        }
+        @media (min-width: $screen-md) {
+            box-shadow: 0 11px 19px 0 rgba(6, 5, 83, 0.06);
+            width: 538px;
+        }
+        @media (min-width: $screen-xl) {
+            box-shadow: 0 14px 24px 0 rgba(6, 5, 83, 0.06);
+            width: 672px;
+            margin-bottom: 40px;
+        }
+    }
+    &_input, &_button {
+        line-height: 46px;
+        padding: 0 16px;
+        @media (min-width: $screen-sm) {
+            padding: 0 24px;
+            line-height: 51px;
+        }
+        @media (min-width: $screen-md) {
+            padding: 0 26px;
+            line-height: 56px;
+        }
+        @media (min-width: $screen-xl) {
+            padding: 0 33px;
+            line-height: 70px;
+        }
+    }
+    &_input {
+        border: none;
+        background-color: $color-bg;
+        flex: 1;
+    }
+    &_button {
+        border: none;
+        background-color: $color-primary;
+        color: $color-bg;
+        width: 100px;
+        @include transition(opacity);
+        &:hover{
+            opacity: .8;
+        }
+        &:active {
+            opacity: .6;
+        }
+        @media (min-width: $screen-sm) {
+            width: 150px;
+        }
+        @media (min-width: $screen-md) {
+            width: 164px;
+        }
+        @media (min-width: $screen-xl) {
+            width: 205px;
+        }
+        .dl-svgsprite {
+            display: none;
+            @media (min-width: $screen-sm) {
+                display: inline-block;
+                margin-right: 23px;
+            }
+        }
+    }
+    &_text {
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.1px;
+        text-align: center;
+        margin-bottom: 0;
+        @media (min-width: $screen-sm) {
+            font-size: 14.4px;
+            font-weight: 400;            
+        }
+        @media (min-width: $screen-md) {
+            font-size: 16px;
+        }
+        @media (min-width: $screen-xl) {
+            font-size: 20px;
+        }
+    }
+}

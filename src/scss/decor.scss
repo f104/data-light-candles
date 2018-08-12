@@ -1,0 +1,79 @@
+@mixin body-gradient($p) {
+    background: linear-gradient(to bottom, $color-gray-light $p, $color-bg $p);
+}
+.dl-body {
+    @include body-gradient(451px);
+    @media (min-width: $screen-sm) {
+        @include body-gradient(703px);
+    }
+    @media (min-width: $screen-md) {
+        @include body-gradient(773px);
+    }
+    @media (min-width: $screen-lg) {
+        @include body-gradient(760px);
+    }
+    @media (min-width: $screen-xl) {
+        @include body-gradient(1000px);
+    }
+    &_decor {
+        position: absolute;
+        z-index: -1;
+        display: none;
+        @media(min-width: $screen-sm) {
+            display: block;
+        }
+        &._left {
+            top: 453px;
+            left: 0;
+            .dl-svgsprite {
+                color: #e3e4e9;
+                width: 43px;
+            }
+            @media(min-width: $screen-md) {
+                top: 463px;
+                .dl-svgsprite {
+                    width: 64px;
+                }
+            }
+            @media(min-width: $screen-lg) {
+                top: 490px;
+                .dl-svgsprite {
+                    width: 92px;
+                }
+            }
+            @media(min-width: $screen-xl) {
+                top: 665px;
+                .dl-svgsprite {
+                    width: 112px;
+                }
+            }
+        }
+        &._right {
+            right: 0;
+            top: 784px;
+            .dl-svgsprite {
+                color: #7c0e86;
+                width: 80px;
+                height: auto;
+            }
+            @media(min-width: $screen-md) {
+                top: 860px;
+                .dl-svgsprite {
+                    width: 70px;
+                }
+            }
+            @media(min-width: $screen-lg) {
+                top: 880px;
+                .dl-svgsprite {
+                    width: 135px;
+                }
+            }
+            @media(min-width: $screen-xl) {
+                top: 1117px;
+                .dl-svgsprite {
+                    width: 184px;
+                }
+            }
+        }
+    }
+}

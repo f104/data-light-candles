@@ -1,0 +1,9 @@
+@mixin list-unstyled {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+@mixin transition($p) {
+    transition: $p .2s ease-in-out;
+}

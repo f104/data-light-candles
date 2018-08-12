@@ -1,0 +1,18 @@
+block variables
+doctype html
+html(lang=__.lang, class="no-js")
+    head
+        include head
+    body.dl-body
+        include mixins/svgsprite
+        include mixins/featitem
+        
+        include header
+        include article
+        include footer
+        .dl-body_decor._left
+            +svgsprite('decor-l')
+        .dl-body_decor._right 
+            +svgsprite('decor-r')
+
+        include scripts

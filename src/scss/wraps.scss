@@ -1,0 +1,15 @@
+.dl-container {
+    padding: 0 $container-padding-xs;
+    @media (min-width:$screen-sm) {
+        padding: 0 $container-padding-sm;
+    }
+    @media (min-width:$screen-md) {
+        padding: 0 $container-padding-md;
+    }
+    @media (min-width:$screen-xl) {
+        padding: 0;
+        max-width: $container-max-width;
+        margin-left: auto;
+        margin-right: auto;
+    }
+} 

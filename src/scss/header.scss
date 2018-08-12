@@ -1,0 +1,57 @@
+.dl-header {
+    &_inner {
+        height: 107px;
+        padding-top: 30px;
+        @media (min-width: $screen-sm) {
+            height: 190px;
+            padding-top: 53px;
+        }
+        @media (min-width: $screen-md) {
+            height: 194px;
+            padding-top: 67px;
+        }
+        @media (min-width: $screen-lg) {
+            height: 181px;
+        }
+        @media (min-width: $screen-xl) {
+            height: 190px;
+        }
+    }
+    &_img {
+        display: block;
+        width: 100%;
+    }
+    &_logo {
+        display: block;
+        width: 100px;
+        @media (min-width: $screen-sm) {
+            width: 125px;
+        }
+        @media (min-width: $screen-md) {
+            width: 156px;
+        }
+    }
+    &_decor {
+        display: none;
+        @media (min-width: $screen-sm) {
+            display: block;
+            position: absolute;
+            width: 39px;
+            right: 64px;
+            bottom: 51px;
+        }
+        @media (min-width: $screen-md) {
+            right: 112px;
+            bottom: 55px;
+        }
+        @media (min-width: $screen-lg) {
+            right: 200px;
+            bottom: 42px;
+        }
+        @media (min-width: $screen-xl) {
+            width: 49px;
+            right: 139px;
+            bottom: 27px;
+        }
+    }
+}

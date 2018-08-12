@@ -1,0 +1,28 @@
+extends /_includes/layout
+
+block title
+    title Data Light Candles
+
+block content
+    .dl-content-header
+        h1.dl-content-header_h Data Light Candles
+        p.dl-content-header_lead. 
+            Cryptocurrencies Data Analytics Platform
+            #[span.dl-content-header_lead_accent launch soon]
+    form.dl-form
+        .dl-form_inputs
+            input.dl-form_input(placeholder='E-mail address' require)
+            button.dl-form_button(type='submit') 
+                +svgsprite('arrow')
+                | Subscribe
+        p.dl-form_text Subscribe for closed beta
+    img.dl-screen(src='screen.png' srcset='screen@2x.png 2x, screen@3x.png 3x')
+    .dl-feat-header
+        h3.dl-feat-header_h Data set
+        p.dl-feat-header_lead In-depth analytics based on the full spectrum of data
+    .dl-feat
+        +featitem('market-data.svg', 'Market Data')
+        +featitem('blockchain-data.svg', 'Blockchain Data')
+        +featitem('media-data.svg', 'Media Data')
+        +featitem('social-data.svg', 'Social Data')
+        
