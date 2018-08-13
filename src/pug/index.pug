@@ -9,13 +9,25 @@ block content
         p.dl-content-header_lead. 
             Cryptocurrencies Data Analytics Platform
             #[span.dl-content-header_lead_accent launch soon]
-    form.dl-form
-        .dl-form_inputs
-            input.dl-form_input(placeholder='E-mail address' require)
-            button.dl-form_button(type='submit') 
-                +svgsprite('arrow')
-                | Subscribe
-        p.dl-form_text Subscribe for closed beta
+    form.dl-form.js-form(method='post' action='backend/subscribe.php')
+        .js-form_inner
+            .dl-form_inputs
+                input.dl-nfields(name='email' value='user@host.com')
+                input.dl-nfields(name='text' value='info')
+                input.dl-nfields(name='email3' value='info@example.com')
+                input.dl-form_input(
+                    type='email' 
+                    name='email2'
+                    placeholder='E-mail address' 
+                    required 
+                    autocomplete='off')
+                button.dl-form_button(type='submit') 
+                    +svgsprite('arrow')
+                    | Subscribe
+            p.dl-form_text Subscribe for closed beta
+        p.dl-form_text._success.js-form_success. 
+            Thanks for your interest!#[br]
+            We'll inform you about closed beta soon.        
     img.dl-screen(src='screen.png' srcset='screen@2x.png 2x, screen@3x.png 3x')
     .dl-feat-header
         h3.dl-feat-header_h Data set

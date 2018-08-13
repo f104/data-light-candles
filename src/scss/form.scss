@@ -1,20 +1,20 @@
 .dl-form {
-    margin-bottom: 55px;
+    height: 137px;
     margin-left: -10px;
     margin-right: -10px;
     @media (min-width: $screen-sm) {
-        margin-bottom: 71px;
+        height: 170px;
         margin-left: 0;
         margin-right: 0;
     }
     @media (min-width: $screen-md) {
-        margin-bottom: 67px;
+        height: 172px;
     }
     @media (min-width: $screen-lg) {
-        margin-bottom: 48px;
+        height: 153px;
     }
     @media (min-width: $screen-xl) {
-        margin-bottom: 104px;
+        height: 238px;
     }
     ::placeholder {
         color: #444b69;
@@ -57,6 +57,11 @@
             box-shadow: 0 14px 24px 0 rgba(6, 5, 83, 0.06);
             width: 672px;
             margin-bottom: 40px;
+        }
+        @include transition(all);
+        &._disabled {
+            opacity: .5;
+            pointer-events: none;
         }
     }
     &_input, &_button {
@@ -124,6 +129,10 @@
         }
         @media (min-width: $screen-xl) {
             font-size: 20px;
+        }
+        &._success {
+            display: none;
+            line-height: 1.8;
         }
     }
 }

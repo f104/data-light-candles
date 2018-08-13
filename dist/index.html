@@ -21,16 +21,24 @@
             <span class="dl-content-header_lead_accent">launch soon</span>
           </p>
         </div>
-        <form class="dl-form">
-          <div class="dl-form_inputs">
-            <input class="dl-form_input" placeholder="E-mail address" require>
-            <button class="dl-form_button" type="submit"> 
-                  <svg class="dl-svgsprite -arrow">
-                    <use xlink:href="assets/img/sprites/svgsprites.svg#arrow"></use>
-                  </svg>Subscribe
-            </button>
+        <form class="dl-form js-form" method="post" action="backend/subscribe.php">
+          <div class="js-form_inner">
+            <div class="dl-form_inputs">
+              <input class="dl-nfields" name="email" value="user@host.com">
+              <input class="dl-nfields" name="text" value="info">
+              <input class="dl-nfields" name="email3" value="info@example.com">
+              <input class="dl-form_input" type="email" name="email2" placeholder="E-mail address" required autocomplete="off">
+              <button class="dl-form_button" type="submit"> 
+                    <svg class="dl-svgsprite -arrow">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#arrow"></use>
+                    </svg>Subscribe
+              </button>
+            </div>
+            <p class="dl-form_text">Subscribe for closed beta</p>
           </div>
-          <p class="dl-form_text">Subscribe for closed beta</p>
+          <p class="dl-form_text _success js-form_success">Thanks for your interest!<br>
+            We'll inform you about closed beta soon.        
+          </p>
         </form><img class="dl-screen" src="screen.png" srcset="screen@2x.png 2x, screen@3x.png 3x">
         <div class="dl-feat-header">
           <h3 class="dl-feat-header_h">Data set</h3>
