@@ -140,8 +140,8 @@
     .dl-form {
         &_input, &_button {
             line-height: normal;
-                padding-top: 14px;
-                padding-bottom: 14px;
+            padding-top: 14px;
+            padding-bottom: 14px;
             @media (min-width: $screen-sm) {
                 padding-top: 17px;
                 padding-bottom: 17px;
@@ -149,6 +149,10 @@
             @media (min-width: $screen-md) {
                 padding-top: 19px;
                 padding-bottom: 19px;
+            }
+            @media (min-width: $screen-xl) {
+                padding-top: 26px;
+                padding-bottom: 26px;
             }
         }
     }
